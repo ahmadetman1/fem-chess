@@ -7,7 +7,9 @@
   src: local(Overlock), url(../fonts/Overlock-Bold.ttf);
   font-weight: bold;
 }
-
+* {
+  box-sizing: border-box;
+}
 :root {
   --clr-accent-300: hsl(39 94% 57%);
   --clr-accent-400: hsl(39 100% 41%);
