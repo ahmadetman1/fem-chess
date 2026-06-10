@@ -70,6 +70,8 @@ a {
 }
 .button {
   font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
   background-color: var(--clr-accent-300);
   text-align: center;
   border: none;
@@ -80,7 +82,7 @@ a {
 .button:hover,
 .button:focus-visible {
   background-color: var(--clr-neutral-800);
-  color: var(--clr-neutral-100);
+  color: var(--clr-accent-300);
 }
 
 .hero {
@@ -118,4 +120,11 @@ a {
   padding: 1rem;
   max-inline-size: 900px;
   margin-inline: auto;
+}
+.three-columns {
+  display: grid;
+  gap: 21px;
+  @media (width > 720px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
