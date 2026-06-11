@@ -14,8 +14,9 @@
   --clr-accent-300: hsl(39 94% 57%);
   --clr-accent-400: hsl(39 100% 41%);
   --clr-neutral-100: hsl(0 0% 100%);
-  --clr-neutral-800: hsl(0 0% 20%);
   --clr-neutral-700: hsl(0 0% 30%);
+  --clr-neutral-800: hsl(0 0% 20%);
+  --clr-neutral-950: hsl(0 0% 0%);
 
   --fs-400: 1.125rem;
   --fs-500: 1.3125rem;
@@ -33,6 +34,33 @@ body {
   font-size: var(--fs-400);
   line-height: 1.6;
   font-family: var(--ff-base);
+}
+.page-header {
+  background-color: var(--clr-neutral-950);
+  padding: 21px;
+}
+.page-header-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 21px;
+}
+.nav-group {
+  display: flex;
+  list-style: none;
+  gap: 21px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+}
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--clr-accent-300);
 }
 h1,
 h2 {
